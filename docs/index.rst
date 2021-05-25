@@ -7,7 +7,7 @@ Welcome to |project| documentation!
    history
 
 
-.. automodule:: skeleton
+.. automodule:: backports.hook_compressed
     :members:
     :undoc-members:
     :show-inheritance:
