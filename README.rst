@@ -1,10 +1,7 @@
 .. image:: https://img.shields.io/pypi/v/backports.hook_compressed.svg
-   :target: `PyPI link`_
+   :target: https://pypi.org/project/backports.hook_compressed
 
 .. image:: https://img.shields.io/pypi/pyversions/backports.hook_compressed.svg
-   :target: `PyPI link`_
-
-.. _PyPI link: https://pypi.org/project/backports.hook_compressed
 
 .. image:: https://github.com/jaraco/backports.hook_compressed/workflows/tests/badge.svg
    :target: https://github.com/jaraco/backports.hook_compressed/actions?query=workflow%3A%22tests%22
