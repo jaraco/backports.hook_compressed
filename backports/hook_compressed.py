@@ -7,7 +7,7 @@ r"""
 >>> plain = getfixture('tmpdir') / 'data.txt'
 >>> plain.write_text('Flam', encoding='utf-8')
 >>> files = map(str, [bzf, gzf, plain])
->>> for line in fileinput.FileInput(files, openhook=hook_compressed):
+>>> for line in fileinput.FileInput(files, openhook=hook_compressed, encoding='utf-8'):
 ...      print(line.strip())
 Foo
 Bar
