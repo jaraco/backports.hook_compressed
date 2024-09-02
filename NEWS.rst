@@ -1,3 +1,9 @@
+v1.1.1
+======
+
+No significant changes.
+
+
 v1.1.0
 ======
 
