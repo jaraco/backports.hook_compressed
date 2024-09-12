@@ -7,7 +7,7 @@ r"""
 >>> plain = getfixture('tmpdir') / 'data.txt'
 >>> plain.write_text('Flam', encoding='utf-8')
 >>> files = map(str, [bzf, gzf, plain])
->>> for line in fileinput.FileInput(files, openhook=hook_compressed, encoding='utf-8'):
+>>> for line in fileinput.FileInput(files, openhook=hook_compressed, **_encoding):
 ...      print(line.strip())
 Foo
 Bar
@@ -18,8 +18,12 @@ Flam
 
 """
 
-import os
 import io
+import os
+import sys
+
+
+_encoding = dict((('encoding', 'utf-8'),) * bool(sys.version_info > (3, 10)))
 
 
 def hook_compressed(filename, mode, *, encoding=None, errors=None):
