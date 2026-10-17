@@ -22,7 +22,6 @@ import io
 import os
 import sys
 
-
 _encoding = dict((('encoding', 'utf-8'),) * bool(sys.version_info > (3, 10)))
 
 
@@ -31,7 +30,7 @@ def hook_compressed(filename, mode, *, encoding=None, errors=None):
     if ext == '.gz':
         import gzip
 
-        stream = gzip.open(filename, mode)
+        stream = gzip.open(filename, mode)  # noqa: SIM115 # returned to the caller
     elif ext == '.bz2':
         import bz2
 
